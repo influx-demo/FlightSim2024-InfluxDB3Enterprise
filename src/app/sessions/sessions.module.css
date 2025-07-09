@@ -1,0 +1,65 @@
+.tabContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headerTitle {
+  margin: 0;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.cardContent {
+  padding-top: 8px;
+}
+
+.sessionsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+.sessionsTable th, .sessionsTable td {
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  text-align: left;
+}
+.sessionsTable th {
+  background: #f7f7f7;
+  font-weight: 600;
+}
+.sessionsTable tr:nth-child(even) {
+  background: #fafafa;
+}
+.sessionsTable th.centre, .sessionsTable td.centre {
+  text-align: center;
+}
+.sessionsTable th.right, .sessionsTable td.right {
+  text-align: right;
+}

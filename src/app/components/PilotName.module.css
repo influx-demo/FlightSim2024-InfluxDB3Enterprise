@@ -1,0 +1,91 @@
+.pilotNameContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  transition: box-shadow 0.5s;
+}
+.pilotNameFading {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.pilotInput {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 120px;
+}
+
+.pilotButton {
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: none;
+  background: #3182ce;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.pilotButton:disabled {
+  background: #b0b6be;
+  color: #e2e8f0;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.modal {
+  display: none; /* Hidden by default, shown via JS */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  background: #fff;
+  margin: 10vh auto;
+  padding: 32px 24px 24px 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  max-width: 380px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  color: #888;
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close:hover {
+  color: #333;
+}
+
+.modalContent p {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.modalContent form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: stretch;
+}

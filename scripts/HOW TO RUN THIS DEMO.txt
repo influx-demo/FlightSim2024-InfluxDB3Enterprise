@@ -1,0 +1,45 @@
+## REQUIREMENTS
+
+- You must be connected to the internet for this demo to run
+
+## GENERAL START INSTRUCTIONS
+
+- Run 1-start-influxdb
+  - If you're prompted to configure for the first time, see below
+- Run 2-start-demo
+- Run 3-start-flightsim
+  - Wait until you see the "Start" button in Microsoft Flight Sim
+  - Click "Start"!
+- Run 4-start-data-bridge
+
+You're ready to go!
+
+In Microsoft Flight Simulator, click on:
+- Activities
+- Flight Training
+- Introduction to Airliners (right at the bottom)
+- 737 Max Landing
+
+## InfluxDB 3 Enterprise Setup
+
+If prompted to get started with InfluxDB when running 1-start-influxdb
+- Select "1) FREE TRIAL"
+- Use the email address influxdbdemo@gmail.com
+- If prompted to, open https://mail.google.com/ and follow the instructions in the email
+
+
+## RESETTING THE DATABASE
+
+If you want to wipe all the data and start from scratch:
+- Run DELETE_ALL_DATA
+- Run 1-start-influx
+- Run ../install
+- Run 2-start-demo
+  - Go to http://localhost:3000/
+  - Click on the </> next to the flightsim bucket
+  - Click "Copy Token"
+  - Update the token in "D:\repos\msfs2influxdb3-enterprise\.env"
+- Run 3-start-flightsim
+  - Wait until you see the "Start" button in Microsoft Flight Sim
+  - Click "Start"!
+- Run 4-start-data-bridge

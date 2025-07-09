@@ -1,0 +1,159 @@
+.tokenModal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.description {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.loading {
+  padding: 1rem;
+  text-align: center;
+  color: var(--color-text-light);
+}
+
+.tokenContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.tokenDisplay {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.token {
+  margin: 0;
+  font-family: monospace;
+  word-break: break-all;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+}
+
+.copyButton {
+  align-self: flex-end;
+}
+
+.copied {
+  background-color: #10b981;
+  border-color: #10b981;
+}
+
+.generateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.existingTokens {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.existingTokensTitle {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.existingTokensDescription {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.tokensList {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.tokensList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tokenItem {
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  background-color: white;
+}
+
+.tokenHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.deleteTokenButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #d32f2f;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.deleteTokenButton:hover {
+  background-color: rgba(211, 47, 47, 0.1);
+}
+
+.tokenName {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.tokenDescription {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.25rem;
+}
+
+.tokenDate {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.warningText {
+  color: #d32f2f;
+  font-weight: 500;
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid #ffcdd2;
+  background-color: #ffebee;
+  border-radius: 4px;
+}
