@@ -52,11 +52,26 @@ This demo requires a self-hosted InfluxDB v3 Enterprise instance.
 
    > ℹ️ The demo is running when you see the following message:
    >  ```
+   >    - Local:        http://localhost:3000
+   >    - Network:      http://192.168.4.238:3000
+   >
    >  ✓ Starting...
    >  ✓ Ready in 2.2s (or some other number)
    >  ```
 
-4. Open http://localhost:3000 in your browser
+4. Open the **Local:** link in your browser
+
+   NOTE: typically http://localhost:3000 for Next.js projects, but if it's in use it will find the next available port number and you'll see something like this instead:
+
+   > ```
+   >  ⚠ Port 3000 is in use, using available port 3001 instead.
+   >    ▲ Next.js 15.3.1
+   >    - Local:        http://localhost:3001
+   >    - Network:      http://192.168.4.238:3001
+   > 
+   >  ✓ Starting...
+   >  ✓ Ready in 2.4s
+   > ```
 
 5. You'll then see a list of the buckets in your InfluxDB instance. Create a new bucket named "flightsim".
 
